@@ -1,0 +1,37 @@
+
+class Practice3
+{
+	public static void main(String[] args) 
+	{
+        Scanner sc=new Scanner(System.in);
+		System.out.println("enter a number");
+		int num=sc.nextInt();
+		int sum=0;
+		int lastdigit=0;
+		int product=1;
+
+
+		
+		while(num>0)
+		{
+			lastdigit=num%10; 
+			
+			sum=sum+lastdigit;
+
+			product=product*lastdigit;
+
+			num=num/10;
+		}
+		if(sum==product)
+		{
+			System.out.println("spy number");
+		}
+		else
+		{
+			System.out.println("not a spy number");
+		}
+					
+		
+	}
+	
+}
